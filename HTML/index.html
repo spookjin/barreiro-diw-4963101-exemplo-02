@@ -1,82 +1,103 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
+<html lang="pt-br">
 
-    <head>
-        <title>Puc Barreiro</title>
-        <style>
-            *{
-                font: size 16px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-            .container{   
-                background-color: aqua;
-                height: 35rem;
-                flex-wrap: wrap;
-                box-shadow: .5rem, 10rem, 10rem, 10rem color red;   
-                display: flex;     
-                justify-content: space-evenly;
-                align-content:center;
-            }
-            .item{
-               background-color: red;
-               color:white;
-               font-weight: bold;
-               padding:1rem;
-               height: 5rem;
-               width: 5rem;
-               margin: 0.5em;
-               border-radius: .5rem;
+<head>
+    <title>Puc Barreiro</title>
+    <style>
+        * {
+            font: size 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
 
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 1</div>
-            <div class="item">item 2</div>
+        .cabecalho {
+            padding: .5rem;
+            background-color: aqua;
+            height: 5rem;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            border-radius: .5rem;
+        }
 
-            
-        </div>
-    </body>
+        .item {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            padding: 1rem;
+            height: 2rem;
+            width: 5rem;
+            margin: 0.1em;
+            border-radius: .5rem;
 
-    </html>
+        }
+
+        .logo {
+            flex-grow: 1;
+        }
+
+        .menu-sandwich {
+            flex-grow: 14;
+        }
+
+        .titulo {
+            flex-grow: 1;
+        }
+
+        .menu-lateral {
+            border: 1px solid red;
+            width: 15rem;
+            flex-grow: 1;
+
+        }
+
+        .parte-principal {
+            border: 1px solid blue;
+            width: 15rem;
+            flex-grow: 1;
+
+        }
+
+        .container {
+            
+            display: flex;
+        }
+
+        .tile {
+            background-color: snow;
+            padding: 1rem;
+            background-color: beige;
+            border-radius: .5rem;
+            margin:2px;
+        }
+
+        .tile:hover {
+            background-color: blueviolet;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecalho">
+
+        <div class="item logo">Logo</div>
+        <div class="item titulo">Titulo</div>
+        <div class="item menu-sandwich">Menu</div>
+
+    </div>
+    <div class="container">
+        <nav class="menu-lateral">
+            <div class="tile"><a href="https://www.pucminas.br/destaques/Paginas/default.aspx">Puc</div></a>
+            <div class="tile"><a href="https://www.primevideo.com/?ref_=dvm_pds_amz_br_dc_s_g_mkw_swYQQQ69Y-dc_pcrid_620438871494&mrntrk=slid__pgrid_62046161446_pgeo_9197208_x__adext__ptid_kwd-312570258680&gad_source=1&gclid=CjwKCAjwp8--BhBREiwAj7og1xmpn_Iu0VJFlXfRxnfsrVmeoelMLEu3fEsR5I19j004VZxPLPjLtxoC41wQAvD_BwE">Prime Video</div></a>
+            <div class="tile"><a href="https://www.google.com.br/">Google</div></a>
+            <div class="tile"><a href="https://play.max.com/?utm_id=1100l5988&utm_source=clickdealerretail&utm_medium=affiliate&clickref=1011lAmrhSNL&gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjwp8--BhBREiwAj7og154srnPUiXFvgSELPp9R0Cx8TugA3OugXkke03_KaS4TG_wXudwLNBoC9TMQAvD_BwE">Hbo</div></a>
+        </nav>
+        <main class="parte-principal">Parte Principal</main>
+    </div>
+</body>
+
+</html>
